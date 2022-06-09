@@ -253,9 +253,7 @@ k.Confidence: Yep, similar to the one you've used for shaking text window.[i] Wa
 @goto .FXChoice
 
 # Enough
-@despawn Rain wait:false
-@despawn Snow wait:false
-@despawn Blur wait:false
+@despawnAll wait:false
 n: And of course you can add your own custom effects. It's as easy as dropping a prefab with the effect to spawn resources list; then use <b>@spawn</b> command followed by the prefab name to activate it.
 n: It's also possible to place a command inside the text, so that it could be executed at the right moment. Like this.[skipInput]
 
@@ -367,7 +365,6 @@ n: Add background assets the same way you've added characters and use <b>@back</
 
 # SelectBack
 @hidePrinter 
-@despawn SunShafts params:0 wait:false
 @back Forest
 @arrange 
 
